@@ -10,6 +10,9 @@ local ff = file.Find
 local string = string
 local hook = hook
 
+lang_data = {}
+lang = {}
+
 function IncludeDirectory(dir, cl, sv )
 	cl, sv = cl or "cl_", sv or "sv_"
 	local files, folders = ff(dir .. "/*", "LUA")
